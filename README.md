@@ -17,6 +17,9 @@ DB View name
 [vw_DastFinancialSummary]
 [vw_DastTradeConfirmationPNL_SF]
 
+PNBUtil_isFieldBlank.isFieldBlank(String.valueOf(row4.Id)) == false
+
+
 // class to check whther field have value or not
 public class PNBUtil_isFieldBlank {
 
