@@ -16,3 +16,28 @@ DB View name
 [vw_individual_ContactDetails]
 [vw_DastFinancialSummary]
 [vw_DastTradeConfirmationPNL_SF]
+
+// class to check whther field have value or not
+public class PNBUtil_isFieldBlank {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+	
+	public static Boolean isFieldBlank(String value) {
+		if (value == null || value.equals("") || value.equals(" ") || value.isEmpty()|| value.equals("None") || value.length() == 0 || value.equals("null"))
+		return true ;
+		else
+			return false;
+		}
+}
+
